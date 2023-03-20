@@ -1,0 +1,47 @@
+<div class="row justify-content-center" style="margin-top: 100px">
+  <div class="col-6">
+    <div class="display-5 my-5 text-center">Login to Website</div>
+    <div>
+      <form class="row justify-content-center">
+        <div class="mb-3 col-8">
+          <label
+            for="exampleInputEmail1"
+            class="form-label"
+            style="font-size: 2rem"
+            >Username</label
+          >
+          <input
+            type="email"
+            class="form-control my-2"
+            #userName
+            id="userName"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3 col-8">
+          <label
+            for="exampleInputPassword1"
+            class="form-label"
+            style="font-size: 2rem"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control my-2"
+            #password
+            id="password"
+          />
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-success col-6 mt-4"
+          style="font-size: 1.5rem"
+          (click)="login(userName.value, password.value)"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
